@@ -44,6 +44,62 @@ If the model is missing, pull it:
 ```bash
 ollama pull cyber-moderator-G3:27b
 ```
+If you want to create model from base model:
+## Setting Up and Running the Ollama Model
+
+### 1️⃣ Create and Configure the Ollama Model File
+
+Navigate to the `modelfiles` directory and create an Ollama `Modelfile`:
+
+```bash
+cd /home/harish/workspace_dc/cybersecurity_moderator/modelfiles/
+nano Modelfile
+```
+
+Inside the `Modelfile`, define your model configuration. Example:
+
+```plaintext
+# Ollama Model Configuration File
+# Path: /home/harish/workspace_dc/cybersecurity_moderator/modelfiles/Modelfile
+
+FROM llama3.3:70b
+SYSTEM "Cybersecurity content moderation model"
+PARAMETER "temperature" 0.7
+PARAMETER "top_p" 0.9
+```
+
+Save and exit (`Ctrl + X`, then `Y`, and `Enter`).
+
+### 2️⃣ Build the Ollama Model
+
+Run the following command to build the model:
+
+```bash
+ollama create cyber-moderator-G3:27b -f /home/harish/workspace_dc/cybersecurity_moderator/modelfiles/Modelfile
+```
+
+This will register the model as `cyber-moderator-G3:27b`.
+
+### 3️⃣ Verify the Model
+
+To check if the model is available:
+
+```bash
+ollama list
+```
+
+You should see `cyber-moderator-G3:27b` in the list.
+
+### 4️⃣ Start Using the Model
+
+Test the model with:
+
+```bash
+ollama run cyber-moderator-G3:27b "Analyze this message for harmful content."
+```
+
+Once confirmed, your FastAPI backend will automatically use this model for moderation tasks.
+
 
 ## Running the Application
 
