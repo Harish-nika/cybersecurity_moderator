@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+ollama
+faiss-cpu
+numpy
+sentence-transformers
+pymupdf  # For PDF text extraction (PyMuPDF)
+streamlit
+requests
