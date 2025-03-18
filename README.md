@@ -74,10 +74,10 @@ streamlit run frontend.py
 ### Backend Processing Output
 ![Backend Running](op_img/code.png)
 
-### Streamlit Moderation Interface
+### Streamlit Moderation Interface-Output
 ![Streamlit UI Output](op_img/site-streamlit-out.png)
 
-### Streamlit UI
+### Streamlit Moderation Interface-Output
 ![Streamlit UI Output](op_img/site-streamlit.png)
 
 ## Troubleshooting
