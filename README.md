@@ -69,6 +69,17 @@ streamlit run frontend.py
 | `/upload-pdf/`  | POST   | Accepts a PDF file for analysis |
 | `/retrieve-chunks/` | GET | Retrieves similar content |
 
+## Output Screenshots
+
+### Backend Processing Output
+![Backend Running](op_img/code.png)
+
+### Streamlit Moderation Interface
+![Streamlit UI Output](op_img/site-streamlit-out.png)
+
+### Streamlit UI
+![Streamlit UI Output](op_img/site-streamlit.png)
+
 ## Troubleshooting
 - If you get a `Connection Refused` error, ensure **FastAPI** is running before launching Streamlit.
 - If the model is not found, verify **Ollama** is running and the correct model is installed.
