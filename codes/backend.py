@@ -22,8 +22,8 @@ text_chunks = []  # Store original text chunks
 chunk_id_map = {}  # Map FAISS index IDs to text chunks
 
 # Ollama Model
-OLLAMA_MODEL = "cyber-moderator-G3:27b"
-#OLLAMA_MODEL = "cyber-moderator-Wlm:7b"
+#OLLAMA_MODEL = "cyber-moderator-G3:27b"
+OLLAMA_MODEL = "cyber-moderator-Wlm:7b"
 
 # ---- TEXT CHUNKING FUNCTION ----
 def chunk_text(text: str, chunk_size: int = 300) -> List[str]:
