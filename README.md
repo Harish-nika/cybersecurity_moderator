@@ -144,4 +144,11 @@ streamlit run frontend.py
 This project is licensed under the MIT License.
 
 ---
+## Author
+
+- **Harish Kumar S**
+- GitHub: [Harish-nika](https://github.com/Harish-nika)
+- Email: [harishkumar56278@gmail.com](mailto\:harishkumar56278@gmail.com)
+- portfolio: [Harish Kumar S - AI ML Engineer](https://harish-nika.github.io/)
+
 Feel free to contribute and improve the project!
